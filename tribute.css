@@ -1,0 +1,24 @@
+
+body {
+  background-color: hsla(240, 100%, 50%, 0.166);
+}
+
+h1 {
+  height: 200px;
+  font-weight:inherit;
+
+/*
+  background: hsla(240, 100%, 50%, 0.166);
+
+
+  background: linear-gradient(
+    180deg,
+    white 10px,
+    hsla(240, 100%, 50%, 0.166) 20px,
+    hsla(240, 100%, 50%, 0.166) 20px
+  );
+  border-collapse: collapse;
+  */
+}
+
+
