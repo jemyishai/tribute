@@ -5,7 +5,8 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  margin: 0;
+  justify-content: stretch;
+  margin: 0px;
   background-color: hsla(51, 100%, 26%, 0.166);
 }
 
@@ -22,11 +23,73 @@ main{
 #h1 {
   flex: 1;
   display: flex;
-  text-align: center;
   justify-content: center;
+  /*
   background-color: hsla(221, 100%, 26%, 0.166);
+  */
+  background: linear-gradient(
+    hsla(0, 100%, 26%, 0.166),
+    hsla(51, 100%, 26%, 0.166)
+  );
+}
+
+#img-div{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  margin: 0;
+  /*
+  background-color: hsla(241, 100%, 36%, 0.166);
+  */
+  background: linear-gradient(
+    hsla(51, 100%, 26%, 0.166),
+    hsla(221, 100%, 26%, 0.166)
+  );
+}
+
+#image{
+  max-width: 100%;
+  display: block;
+  height: auto;
+  border-radius: 50%;
+}
+
+#tribute-info{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*
+  background-color: hsla(221, 100%, 50%, 0.166);
+  */
+  background: linear-gradient(
+    hsla(221, 100%, 26%, 0.166),
+    hsla(51, 100%, 26%, 0.166)
+  );
+  width: 100%;
+}
+
+#link{
+  display: flex;
+  flex: 1;
+  /*
+  background-color: hsla(51, 100%, 26%, 0.166);
+*/
+background: linear-gradient(
+  hsla(51, 100%, 26%, 0.166),
+  hsla(0, 100%, 26%, 0.166)
+);
+}
+
+#tribute-link:hover{
+  color: dodgerblue;
+}
+
+
+
 /*
 font-weight:inherit;
   background-color: hsla(240, 100%, 50%, 0.166);
@@ -45,42 +108,3 @@ font-weight:inherit;
     hsla(240, 100%, 50%, 0.166) 40px
   );
   */
-}
-
-#img-div{
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  background-color: hsla(241, 100%, 36%, 0.166);
-}
-
-#image{
-  max-width: 100%;
-  display: block;
-  height: auto;
-  border-radius: 50%;
-}
-
-#tribute-info{
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: hsla(221, 100%, 50%, 0.166);
-  width: 100%;
-}
-
-#link{
-  display: flex;
-  flex: 1;
-  background-color: hsla(211, 100%, 26%, 0.166);
-}
-
-#tribute-link:hover{
-  color: dodgerblue;
-}
-
