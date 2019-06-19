@@ -1,16 +1,25 @@
 
 body {
   background-color: hsla(240, 100%, 50%, 0.166);
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
-  height: 200px;
-  font-weight:inherit;
-
+  height: auto;
+  background-color: hsla(240, 100%, 50%, 0.166);
+  width: 100%;
 /*
-  background: hsla(240, 100%, 50%, 0.166);
-
-
+font-weight:inherit;
+  background-color: hsla(240, 100%, 50%, 0.166);
   background: linear-gradient(
     180deg,
     white 10px,
@@ -18,7 +27,42 @@ h1 {
     hsla(240, 100%, 50%, 0.166) 20px
   );
   border-collapse: collapse;
+
+  background: linear-gradient(
+    180deg,
+    white 20px,
+    blueviolet 40px,
+    hsla(240, 100%, 50%, 0.166) 40px
+  );
   */
 }
 
+#img-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: hsla(340, 100%, 50%, 0.166);
+}
+
+#image{
+  max-width: 100%;
+  display: block;
+  height: auto;
+  border-radius: 50%;
+}
+
+#tribute-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsla(140, 100%, 50%, 0.166);
+  width: 100%;
+}
+
+#tribute-link:hover{
+  color: dodgerblue;
+}
 
