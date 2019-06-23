@@ -126,33 +126,67 @@ main{
    3s linear boxy,
    3s linear 3s boxy-sharp;
   animation-fill-mode: forwards;
+
+  good color:
+  box-shadow: 0px 0px 25px 25px hsla(51, 100%, 50%, 1.366);
+
   */
+
 }
 
-#box-shadow-rotate{
+#outer-box-shadow-rotate{
 display: flex;
 flex-direction: column;
 align-items: center;
 max-width: 100%;
-animation: 3s linear boxy-rotate;
+animation: 4s linear box-rotate;
+border-radius: 50%;
+box-shadow: -5px 5px 5px 5px hsla(51, 100%, 50%, 0.366);
 }
 
-#box-shadow-rotate::before{
-  animation: 3s linear anti-boxy-rotate;
+#inner-box-shadow-rotate{
+  animation: 4s linear shadow-rotate;
+  border-radius: 50%;
 }
 
-@keyframes boxy-rotate{
-  10%{
-  box-shadow: 0px 0px 25px 25px hsla(51, 100%, 50%, 1.366);
-  transform: rotate(360deg);
+@keyframes box-rotate{
+  0%{
+    transform: rotate(0deg);
+    }
+  25%{
+    transform: rotate(90deg);
   }
+  50%{
+    transform: rotate(180deg);
+    }
+  75%{
+    transform: rotate(270deg);
+    }
+  100%{
+    transform: rotate(360deg);
+    }
 }
-@keyframes anti-boxy-rotate{
-  10%{
-  box-shadow: 0px 0px 25px 25px hsla(51, 100%, 50%, 1.366);
-  transform: rotate(-360deg);
+
+
+@keyframes shadow-rotate{
+  0%{
+    transform: rotate(0deg);
+    }
+  25%{
+    transform: rotate(-90deg);
   }
+  50%{
+    transform: rotate(-180deg);
+    }
+  75%{
+    transform: rotate(-270deg);
+    }
+  100%{
+    transform: rotate(-360deg);
+    }
 }
+
+
 
 #tribute-info{
   display: flex;
