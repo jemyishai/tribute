@@ -139,13 +139,13 @@ display: flex;
 flex-direction: column;
 align-items: center;
 max-width: 100%;
-animation: 4s linear box-rotate;
+animation: 3s linear box-rotate;
 border-radius: 50%;
-box-shadow: -5px 5px 5px 5px hsla(51, 100%, 50%, 0.366);
+box-shadow: -15px 5px 20px 10px hsla(51, 100%, 50%, 0.366);
 }
 
 #inner-box-shadow-rotate{
-  animation: 4s linear shadow-rotate;
+  animation: 3s linear shadow-rotate;
   border-radius: 50%;
 }
 
